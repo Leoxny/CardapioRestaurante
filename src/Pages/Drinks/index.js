@@ -4,26 +4,27 @@ import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 export default function Drinks({navigation}) {
  return (
   <View style={styles.container}>
-
-    <TouchableOpacity onPress={() => navigation.navigate('InformationDrinks')}>
+    
       <View>
+      <TouchableOpacity onPress={() => navigation.navigate('InformationDrinks')}>
         <Image
           style={styles.image}
           source={require('../../asset/caipirinha-cadareceita.jpg')}
         />
+        </TouchableOpacity>
         <Text style={styles.texto}>Caipirinha de limão</Text>
       </View>
-    </TouchableOpacity>
 
-    <TouchableOpacity onPress={() => navigation.navigate('InformationDrinks')}>
     <View>
+    <TouchableOpacity onPress={() => navigation.navigate('InformationDrinks')}>
       <Image
         style={styles.image}
         source={require('../../asset/jasmine.jpg')}
       />
+      </TouchableOpacity>
       <Text style={styles.texto}>Jasmine Margarita</Text>
     </View>
-    </TouchableOpacity>
+    
 
     {/* <TouchableOpacity onPress={() => navigation.navigate('InformationDrinks')}>
       <View>

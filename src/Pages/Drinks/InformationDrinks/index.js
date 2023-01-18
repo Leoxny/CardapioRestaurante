@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet,TouchableOpacity } from 'react-native';
 
 export default function InformationDrinks() {
  return (
@@ -9,7 +9,7 @@ export default function InformationDrinks() {
             style={styles.image}
             source={require('../../../asset/caipirinha-cadareceita.jpg')}
             />
-            <Text>Caipitinha de Limão</Text>
+            <Text style={styles.about}>Caipirinha de Limão</Text>
         </View>
         <View style={styles.colum}>
             <Text style={styles.title}>Descrição</Text>
@@ -22,6 +22,9 @@ export default function InformationDrinks() {
             <Text style={styles.title}>Preço</Text>
             <Text style={styles.desc}>R$ 10,00</Text>
         </View>
+        <TouchableOpacity style={styles.handleAdd}>
+            <Text style={styles.handleAddText}>Pronto</Text>
+        </TouchableOpacity>
    </View>
   );
 }
@@ -35,15 +38,46 @@ const styles = StyleSheet.create({
         height: 300
     },
     desc:{
-
-    },
-    prec:{
-
+        fontWeight: 'bold',
+        fontSize: 16
     },
     title:{
-        fontSize: 18
+        fontSize: 18,
+        color: '#a9a9a9',
+        fontWeight: 'bold'
     },
     colum:{
+        marginEnd: 10,
+        marginStart: 10,
+        marginBottom: 10,
+        top: -30
+    },
+    prec:{
+        marginEnd: 10,
+        marginStart: 10,
+        top: -30
+    },
+    about:{
+        marginStart: 10,
+        fontSize: 30,
+        fontWeight: 'bold',
+        color: 'white',
+        top: -40
+    },
+    handleAdd:{
+        backgroundColor: '#00bfff',
+        fontSize: 17,
+        marginLeft: 10,
+        marginRight: 10,
+        padding: 14,
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
+      handleAddText:{
+        color: '#fff',
+        fontSize: 15,
+      },
 
-    }
+
 })
