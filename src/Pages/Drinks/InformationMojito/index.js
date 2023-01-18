@@ -7,20 +7,20 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/caipirinha-cadareceita.jpg')}
+            source={require('../../../asset/Drinks/mojito.jpg')}
             />
-            <Text style={styles.about}>Caipirinha de Limão</Text>
+            <Text style={styles.about}>Mojito</Text>
         </View>
         <View style={styles.colum}>
             <Text style={styles.title}>Descrição</Text>
-            <Text style={styles.desc}>A caipirinha é uma bebida alcoólica brasileira, ou um coquetel de origem paulista, 
-                feita com cachaça, limão, açúcar e gelo. Variações incluem a caipiroska - com vodka ao invés de cachaça - 
-                e a caipiríssima - com rum
+            <Text style={styles.desc}>Mojito é um coquetel à base de rum branco originário de Cuba. 
+            Esse coquetel com mais de 100 anos não tem sua origem tão bem documentada quanto o daiquiri ou a cuba-libre. 
+            Sabe-se que floresceu na noite de Havana usando ingredientes nativos do Caribe.
             </Text>
         </View>
         <View style={styles.prec}>
             <Text style={styles.title}>Preço</Text>
-            <Text style={styles.desc}>R$ 10,00</Text>
+            <Text style={styles.desc}>R$ 24,00</Text>
         </View>
         <TouchableOpacity style={styles.handleAdd}>
             <Text style={styles.handleAddText}>Pronto</Text>
