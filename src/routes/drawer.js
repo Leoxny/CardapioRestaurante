@@ -21,11 +21,7 @@ export default function DrawerNavigation(){
             headerShown: false,
         }
     }
-    >
-        <Drawer.Screen
-        name="Login"
-        component={Login}
-        />        
+    >      
 
         <Drawer.Screen
         name="Pizza"

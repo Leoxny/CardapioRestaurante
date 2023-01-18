@@ -5,20 +5,17 @@ import { Entypo, Feather, Ionicons} from '@expo/vector-icons'
 
 import { DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
 
-// import { Container } from './styles';
 
 const CustomDrawer = (props) => {
   return (
     <View style={styles.container}>
         <DrawerContentScrollView {...props}>
             <View style={styles.content}>
-                <Feather name="user" size={35} color={'black'} />
+                <Feather name="user" size={50} color={'black'} />
             </View>
-            <DrawerItemList {...props} />
+            <Text>___________________________________</Text>
+            <DrawerItemList {...props}/>
         </DrawerContentScrollView>
-        <View>
-            <Text></Text>
-        </View>
     </View>
   )
 }
@@ -28,14 +25,15 @@ export default CustomDrawer;
 const styles = StyleSheet.create({
     container:{
         flex: 1, 
-        marginTop: 30
+        marginTop: 45
     },
     content:{
-        width: 44,
-        height: 44,
+        width: 80,
+        height: 80,
         backgroundColor: '#d3d3d3',
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 44/2,
+        borderRadius: 88/2,
+        marginLeft: 18
     }
 })

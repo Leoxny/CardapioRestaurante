@@ -7,7 +7,7 @@ const Login = () => {
   return(
     <View style={styles.container}>
         <Text>
-
+          TESTE
         </Text>
     </View>
   ) 
