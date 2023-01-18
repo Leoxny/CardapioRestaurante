@@ -1,16 +1,21 @@
-import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import React,{useState} from 'react';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 export default function Drinks({navigation}) {
  return (
   <View style={styles.container}>
-    <View>
-      <Image
-        style={styles.image}
-        source={require('../../asset/caipirinha-cadareceita.jpg')}
-      />
-      <Text style={styles.texto}>Caipirinha de limão</Text>
-    </View>
+
+    <TouchableOpacity onPress={() => navigation.navigate('InformationDrinks')}>
+      <View>
+        <Image
+          style={styles.image}
+          source={require('../../asset/caipirinha-cadareceita.jpg')}
+        />
+        <Text style={styles.texto}>Caipirinha de limão</Text>
+      </View>
+    </TouchableOpacity>
+
+    <TouchableOpacity onPress={() => navigation.navigate('InformationDrinks')}>
     <View>
       <Image
         style={styles.image}
@@ -18,36 +23,40 @@ export default function Drinks({navigation}) {
       />
       <Text style={styles.texto}>Jasmine Margarita</Text>
     </View>
-    <View>
-      <Image
-        style={styles.image}
-        source={require('../../asset/gilmet.jpg')}
-      />
-      <Text style={styles.texto}>Gilmet Cocktail</Text>
-    </View>
+    </TouchableOpacity>
+
+    {/* <TouchableOpacity onPress={() => navigation.navigate('InformationDrinks')}>
+      <View>
+        <Image
+          style={styles.image}
+          source={require('../../asset/gilmet.jpg')}
+        />
+        <Text style={styles.texto}>Gilmet Cocktail</Text>
+      </View>
+    </TouchableOpacity> */}
+
  </View>
   );
 }
 
 const styles = StyleSheet.create({
     container:{
-      //flexDirection: 'row',
       backgroundColor: 'white',
+      flexDirection: 'row',
       flex: 1
     },
     image:{
-      flexDirection: 'column',
+      flexDirection: 'row',
       justifyContent: 'space-between',
-      alignContent:'flex-start',
       height: 150,
-      width: 150,
+      width: 180,
       marginTop: 15,
-      marginLeft: 30,
+      margin: 12,
+      borderRadius: 10,
     },
     texto: {
-      fontSize: 16,
-      marginLeft: 30,
-      alignItems: 'center',
+      fontSize: 18,
+      marginLeft: 15,
       fontWeight: 'bold',
     }
 })

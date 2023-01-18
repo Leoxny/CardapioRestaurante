@@ -1,5 +1,5 @@
 import React from 'react';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+//import { createDrawerNavigator } from '@react-navigation/drawer';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -13,42 +13,32 @@ import Hamburger from '../Pages/Hamburger';
 import Pizza from '../Pages/Pizza';
 import Home from '../Pages/Home';
 
-import {Ionicons, Entypo, FontAwesome5, MaterialIcons} from '@expo/vector-icons'
+import InformationDrinks from '../Pages/Drinks/InformationDrinks';
+import InformationDog from '../Pages/HotDog/InformationDog'
+import InformationHam from '../Pages/Hamburger/InformationHam'
+
+import { Entypo, FontAwesome5,  FontAwesome} from '@expo/vector-icons'
 
 const Stack = createNativeStackNavigator();
-const Drawer = createDrawerNavigator();
+//const Drawer = createDrawerNavigator();
 
-// function MyTab(){
-//     return(
-
-//     <Drawer.Navigator>
-//         <Drawer.Screen name="Sobremessa" component={Dessert}/>
-//         <Drawer.Screen name="Saladas" component={Salads} />
-//         <Drawer.Screen name="Local" component={Local} />
-//         <Drawer.Screen name="Petisco" component={Fingerfoods} />
-//     </Drawer.Navigator>
-//     )
-// }
-
-const Tab = createBottomTabNavigator();
-
-export default function Routes(){
+function MyTab(){
     return(
 
     <Tab.Navigator
-        tabBarOptions={{
-            tabStyle:{
-                paddingBottom: 4,
-                paddingTop: 4
-            }
-        }}
+    screenOptions={
+        {
+            headerShown: false
+        }
+    }
     >
         <Tab.Screen 
         name="Local" 
         component={Local}
         options={{
+            title: 'Local',
             tabBarIcon: ({size, color}) => (
-                <MaterialIcons name="local-dining" size={size} color={color}/>
+                <FontAwesome name="map-marker" size={size} color={color}/>
             )
         }}
         />
@@ -57,6 +47,7 @@ export default function Routes(){
         name="Hamburger" 
         component={Hamburger}
         options={{
+            title: 'Hamburger',
             tabBarIcon: ({size, color}) => (
                 <FontAwesome5 name="hamburger" size={size} color={color}/>
             )
@@ -67,6 +58,7 @@ export default function Routes(){
         name="Home" 
         component={Home}
         options={{
+            title: 'Home',
             tabBarIcon: ({size, color}) => (
                 <Entypo name="home" size={size} color={color}/>
             )
@@ -77,8 +69,9 @@ export default function Routes(){
         name="Cachoro Quente" 
         component={HotDog}
         options={{
+            title: 'Cachorro quente',
             tabBarIcon: ({size, color}) => (
-                <Ionicons name="pizza" size={size} color={color}/>
+                <FontAwesome5 name="hotdog" size={size} color={color}/>
             )
         }}
         />
@@ -87,6 +80,7 @@ export default function Routes(){
         name="Drinks" 
         component={Drinks}
         options={{
+            title: 'Bebidas',
             tabBarIcon: ({size, color}) => (
                 <Entypo name="drink" size={size} color={color}/>
             )
@@ -94,6 +88,65 @@ export default function Routes(){
         />
 
     </Tab.Navigator>
+    )
+}
+
+const Tab = createBottomTabNavigator();
+
+export default function Routes(){
+    return(
+
+    <Stack.Navigator
+    >
+        <Stack.Screen
+        name="Local"
+        component={MyTab}
+        options={{ title: 'Local' }}
+        />
+
+        <Stack.Screen
+        name="Hamburger" 
+        component={MyTab}
+        options={{ title: 'Hamburger' }}
+        />
+
+        <Stack.Screen 
+        name="InformationDog" 
+        component={InformationDog}
+        options={{ title: 'Cachorro quente' }}
+        />       
+
+        <Stack.Screen 
+        name="Home" 
+        component={MyTab}
+        options={{ title: 'Home' }}
+        />
+
+        <Stack.Screen
+        name="Cachoro Quente" 
+        component={MyTab}
+        options={{ title: 'Cachorro quente' }}
+        />
+
+        <Stack.Screen 
+        name="InformationHam" 
+        component={InformationHam}
+        options={{ title: 'Cachorro quente' }}
+        />        
+
+        <Stack.Screen 
+        name="Drinks" 
+        component={MyTab}
+        options={{ title: 'Bebidas' }}
+        />
+
+        <Stack.Screen 
+        name="InformationDrinks" 
+        component={InformationDrinks}
+        options={{ title: 'Bebidas' }}
+        />
+
+    </Stack.Navigator>
 
     )
 }
