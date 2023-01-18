@@ -47,14 +47,14 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     colum:{
-        marginEnd: 10,
-        marginStart: 10,
+        marginEnd: 15,
+        marginStart: 15,
         marginBottom: 10,
         top: -30
     },
     prec:{
-        marginEnd: 10,
-        marginStart: 10,
+        marginEnd: 15,
+        marginStart: 15,
         top: -30
     },
     about:{
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight: 'bold',
         color: 'white',
-        top: -40
+        top: -50
     },
     handleAdd:{
         backgroundColor: '#00bfff',

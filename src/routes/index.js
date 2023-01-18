@@ -1,15 +1,12 @@
 import React from 'react';
+
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Dessert from '../Pages/Dessert'
-import Salads from '../Pages/Salads'
 import Local from '../Pages/Local'
 import HotDog from '../Pages/HotDog'
-import Fingerfoods from '../Pages/Fingerfoods'
 import Drinks from '../Pages/Drinks';
 import Hamburger from '../Pages/Hamburger';
-import Pizza from '../Pages/Pizza';
 import Home from '../Pages/Home';
 
 import InformationDrinks from '../Pages/Drinks/InformationDrinks';
@@ -19,7 +16,6 @@ import InformationHam from '../Pages/Hamburger/InformationHam'
 import { Entypo, FontAwesome5,  FontAwesome} from '@expo/vector-icons'
 
 const Stack = createNativeStackNavigator();
-//const Drawer = createDrawerNavigator();
 
 function MyTab(){
     return(
@@ -27,7 +23,11 @@ function MyTab(){
     <Tab.Navigator
     screenOptions={
         {
-            headerShown: false
+            headerShown: false,
+            tabBarOptions: {
+                activeTintColor: '#00ffff',
+
+            },
         }
     }
     >
@@ -95,13 +95,19 @@ const Tab = createBottomTabNavigator();
 export default function Routes(){
     return(
 
-    <Stack.Navigator
+    <Stack.Navigator 
+    screenOptions={
+        {
+            headerTitleAlign: 'center',
+            //headerShown: false            
+        }
+    }
     >
-        <Stack.Screen
+        {/* <Stack.Screen
         name="Local"
         component={MyTab}
         options={{ title: 'Local' }}
-        />
+        /> */}
 
         <Stack.Screen
         name="Hamburger" 
@@ -110,26 +116,26 @@ export default function Routes(){
         />
 
         <Stack.Screen 
-        name="InformationDog" 
-        component={InformationDog}
-        options={{ title: 'Cachorro quente' }}
+        name="InformationHam" 
+        component={InformationHam}
+        options={{ title: 'Hamburger' }}
         />       
 
-        <Stack.Screen 
+        {/* <Stack.Screen 
         name="Home" 
         component={MyTab}
         options={{ title: 'Home' }}
-        />
+        /> */}
 
         <Stack.Screen
-        name="Cachoro Quente" 
+        name="HotDog" 
         component={MyTab}
         options={{ title: 'Cachorro quente' }}
         />
 
         <Stack.Screen 
-        name="InformationHam" 
-        component={InformationHam}
+        name="InformationDog" 
+        component={InformationDog}
         options={{ title: 'Cachorro quente' }}
         />        
 

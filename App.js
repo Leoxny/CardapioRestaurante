@@ -1,11 +1,14 @@
 import { NavigationContainer } from '@react-navigation/native';
 import Routes from './src/routes';
+import DrawerNavigation from './src/routes/drawer'
 
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Routes/>
+      <DrawerNavigation>
+        <Routes/>
+      </DrawerNavigation>
     </NavigationContainer>
   );
 }
