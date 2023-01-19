@@ -3,10 +3,9 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { StyleSheet, Image } from 'react-native';
 
 import Stack from './index'
-import Login from '../components/Login'
 import CustomDrawer from '../components/CustomDrawer';
 
-import { Entypo, Ionicons} from '@expo/vector-icons'
+import { Entypo, Ionicons, FontAwesome5} from '@expo/vector-icons'
 
 const Drawer = createDrawerNavigator();
 
@@ -37,6 +36,17 @@ export default function DrawerNavigation(){
         options={{ 
             drawerIcon: ({color}) => (
                 <Ionicons name="pizza" size={22} color={color}/>
+                ),  
+        }}
+        />
+
+        <Drawer.Screen
+        name="Hamburguer" 
+        component={Stack}
+        options={{ 
+            title: 'Hamburger',
+            drawerIcon: ({color}) => (
+                <FontAwesome5 name="hamburger" size={22} color={color}/>
                 ),  
         }}
         />

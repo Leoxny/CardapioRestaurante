@@ -4,9 +4,9 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Local from '../Pages/Local'
-import HotDog from '../Pages/HotDog'
+import Hamburger from '../Pages/Hamburger'
 import Drinks from '../Pages/Drinks';
-import Hamburger from '../Pages/Hamburger';
+import Steaks from '../Pages/Steaks';
 import Home from '../Pages/Home';
 
 import InformationDrinksLimon from '../Pages/Drinks/InformationDrinksLimon';
@@ -24,10 +24,22 @@ import InformationMorango from '../Pages/Drinks/InformationMorango';
 import InformationLimao from '../Pages/Drinks/InformationLimao';
 import InformationMelancia from '../Pages/Drinks/InformationMelancia';
 
+import InformationBalSC from '../Pages/Local/InformationBalSC'
+import InformationFloSC from '../Pages/Local/InformationFloSC'
+import InformationJonSC from '../Pages/Local/InformationJonSC'
+import InformationPoaRS from '../Pages/Local/InformationPoaRS'
+
+import InformationBone from '../Pages/Steaks/InformationBone'
+import InformationFilet from '../Pages/Steaks/InformationFilet'
+import InformationPork from '../Pages/Steaks/InformationPork'
+import InformationRibeye from '../Pages/Steaks/InformationRibeye'
+import InformationSteaks from '../Pages/Steaks/InformationSteaks'
+import InformationStrip from '../Pages/Steaks/InformationStrip'
+
 import InformationDog from '../Pages/HotDog/InformationDog'
 import InformationHam from '../Pages/Hamburger/InformationHam'
 
-import { Entypo, FontAwesome5,  FontAwesome} from '@expo/vector-icons'
+import { Entypo, FontAwesome5,  FontAwesome, MaterialCommunityIcons} from '@expo/vector-icons'
 
 const Stack = createNativeStackNavigator();
 
@@ -59,7 +71,7 @@ function MyTab(){
         name="Hamburger" 
         component={Hamburger}
         options={{
-            title: 'Hamburger',
+            title: 'Bife',
             tabBarIcon: ({size, color}) => (
                 <FontAwesome5 name="hamburger" size={size} color={color}/>
             )
@@ -78,12 +90,12 @@ function MyTab(){
         />
 
         <Tab.Screen 
-        name="Cachoro Quente" 
-        component={HotDog}
+        name="Steaks" 
+        component={Steaks}
         options={{
-            title: 'Cachorro quente',
+            title: 'Bife',
             tabBarIcon: ({size, color}) => (
-                <FontAwesome5 name="hotdog" size={size} color={color}/>
+                <MaterialCommunityIcons name="food-drumstick" size={size} color={color}/>
             )
         }}
         />
@@ -116,130 +128,161 @@ export default function Routes(){
         }
     }
     >
-        {/* <Stack.Screen
-        name="Local"
-        component={MyTab}
-        options={{ title: 'Local' }}
-        /> */}
 
         <Stack.Screen
-        name="Hamburger" 
+        name="Local" 
         component={MyTab}
-        options={{ title: 'Hamburger' }}
         />
+
+<Stack.Screen 
+        name="InformationSteaks" 
+        component={InformationSteaks}
+        options={{ title: 'Gravy Mignon' }}
+        />        
 
         <Stack.Screen 
         name="InformationHam" 
         component={InformationHam}
-        options={{ title: 'Hamburger' }}
-        />       
-
-        {/* <Stack.Screen 
-        name="Home" 
-        component={MyTab}
-        options={{ title: 'Home' }}
-        /> */}
-
-        <Stack.Screen
-        name="HotDog" 
-        component={MyTab}
-        options={{ title: 'Cachorro quente' }}
-        />
-
-        <Stack.Screen 
-        name="InformationDog" 
-        component={InformationDog}
-        options={{ title: 'Cachorro quente' }}
+        options={{ title: 'Hamburguer' }}
         />        
 
-        <Stack.Screen 
-        name="Drinks" 
-        component={MyTab}
-        options={{ title: 'Bebidas' }}
-        />
 
         <Stack.Screen 
         name="InformationDrinksLimon" 
         component={InformationDrinksLimon}
-        options={{ title: 'Bebidas' }}
-        />
+        options={{ title: 'Caipirinha de limão' }}
+        /> 
 
-        <Stack.Screen 
+         <Stack.Screen 
         name="InformationDrinksMarg" 
         component={InformationDrinksMarg}
-        options={{ title: 'Bebidas' }}
-        />
+        options={{ title: 'Jasmine Margarita' }}
+        /> 
 
-        <Stack.Screen 
+         <Stack.Screen 
         name="InformationGilmet" 
         component={InformationGilmet}
-        options={{ title: 'Bebidas' }}
-        />
+        options={{ title: 'Gilmet Cocktail' }}
+        /> 
 
 <Stack.Screen 
         name="InformationGinTonica" 
         component={InformationGinTonica}
-        options={{ title: 'Bebidas' }}
-        />
+        options={{ title: 'Gin Tonica' }}
+        /> 
 
-<Stack.Screen 
+ <Stack.Screen 
         name="InformationAperol" 
         component={InformationAperol}
-        options={{ title: 'Bebidas' }}
-        />
+        options={{ title: 'Aperol Spritz' }}
+        /> 
 
-<Stack.Screen 
+ <Stack.Screen 
         name="InformationBeach" 
         component={InformationBeach}
-        options={{ title: 'Bebidas' }}
-        />
+        options={{ title: 'Sex on the beach' }}
+        /> 
 
-<Stack.Screen 
+ <Stack.Screen 
         name="InformationTropical" 
         component={InformationTropical}
-        options={{ title: 'Bebidas' }}
-        />
+        options={{ title: 'Gin Tropical' }}
+        /> 
 
-<Stack.Screen 
+ <Stack.Screen 
         name="InformationMojito" 
         component={InformationMojito}
-        options={{ title: 'Bebidas' }}
-        />
+        options={{ title: 'Mojito' }}
+        /> 
 
-<Stack.Screen 
+ <Stack.Screen 
         name="InformationBoomerang" 
         component={InformationBoomerang}
-        options={{ title: 'Bebidas' }}
-        />
+        options={{ title: 'Boomerang' }}
+        /> 
 
-<Stack.Screen 
+ <Stack.Screen 
         name="InformationAbacaxi" 
         component={InformationAbacaxi}
-        options={{ title: 'Bebidas' }}
-        />
+        options={{ title: 'Caipirinha de abacaxi' }}
+        /> 
 
 <Stack.Screen 
         name="InformationNevada" 
         component={InformationNevada}
-        options={{ title: 'Bebidas' }}
+        options={{ title: 'Caipirosca nevada' }}
         />
 
 <Stack.Screen 
         name="InformationMorango" 
         component={InformationMorango}
-        options={{ title: 'Bebidas' }}
+        options={{ title: 'Caipirinha de morango condensada' }}
         />
 
-<Stack.Screen 
+ <Stack.Screen 
         name="InformationLimao" 
         component={InformationLimao}
-        options={{ title: 'Bebidas' }}
+        options={{ title: 'Caipirinha de limão condensada' }}
+        /> 
+
+ <Stack.Screen 
+        name="InformationMelancia" 
+        component={InformationMelancia}
+        options={{ title: 'Twist de melancia e morango' }}
         />
 
 <Stack.Screen 
-        name="InformationMelancia" 
-        component={InformationMelancia}
-        options={{ title: 'Bebidas' }}
+        name="InformationBalSC" 
+        component={InformationBalSC}
+        options={{ title: 'Balneário Camboriú / SC' }}
+        />
+
+<Stack.Screen 
+        name="InformationFloSC" 
+        component={InformationFloSC}
+        options={{ title: 'Florianópolis / SC' }}
+        />
+
+<Stack.Screen 
+        name="InformationJonSC" 
+        component={InformationJonSC}
+        options={{ title: 'Joinville / SC' }}
+        />
+
+<Stack.Screen 
+        name="InformationPoaRS" 
+        component={InformationPoaRS}
+        options={{ title: 'Porto Alegre / RS' }}
+        />
+
+<Stack.Screen 
+        name="InformationBone" 
+        component={InformationBone}
+        options={{ title: 'T-Bone' }}
+        />
+
+<Stack.Screen 
+        name="InformationFilet" 
+        component={InformationFilet}
+        options={{ title: 'Syoney Filet' }}
+        />
+
+<Stack.Screen 
+        name="InformationPork" 
+        component={InformationPork}
+        options={{ title: 'Pork Ribs' }}
+        />
+
+<Stack.Screen 
+        name="InformationStrip" 
+        component={InformationStrip}
+        options={{ title: 'Strip Steack' }}
+        />
+
+<Stack.Screen 
+        name="InformationRibeye" 
+        component={InformationRibeye}
+        options={{ title: 'Queensland Ribeye' }}
         />
 
     </Stack.Navigator>
