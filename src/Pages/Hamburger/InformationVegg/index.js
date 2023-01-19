@@ -7,14 +7,14 @@ export default function InformationSteaks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/Ham/classic.jpg')}
+            source={require('../../../asset/Ham/veggie.jpg')}
             />
-            <Text style={styles.about}>Classic Burger</Text>
+            <Text style={styles.about}>Veggie</Text>
         </View>
         <View style={styles.colum}>
             <Text style={styles.title}>Descrição</Text>
-            <Text style={styles.desc}>O nostálgico e tradicional burger... Pão, Angus burger, queijo, alface americana, com cebola roxa e tomates picados. 
-            Acompanha maionese de ervas e batata frita à sua escolha.
+            <Text style={styles.desc}>Autêntico Burger Vegano. Pão de gergelim e um saboroso burger de grão de bico com quinoa e aveia, slices de pimentão vermelho, tomate, rúcula e maionese vegana. 
+            Acompanha batata e maionese vegana com um leve sabor de pimenta calabresa... Hummmmmmmmm
             </Text>
         </View>
         <View style={styles.prec}>

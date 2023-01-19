@@ -7,14 +7,14 @@ export default function InformationSteaks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/Ham/classic.jpg')}
+            source={require('../../../asset/Ham/smoke.jpg')}
             />
-            <Text style={styles.about}>Classic Burger</Text>
+            <Text style={styles.about}>Smoked Burger</Text>
         </View>
         <View style={styles.colum}>
             <Text style={styles.title}>Descrição</Text>
-            <Text style={styles.desc}>O nostálgico e tradicional burger... Pão, Angus burger, queijo, alface americana, com cebola roxa e tomates picados. 
-            Acompanha maionese de ervas e batata frita à sua escolha.
+            <Text style={styles.desc}>Inspirado na forte influência inglesa na Austrália, ele não poderia faltar... O bacon! Pão, Angus burger, cheddar, bacon, tomate e cebola picados. 
+            Acompanha molho Uluru e batata à sua escolha.
             </Text>
         </View>
         <View style={styles.prec}>

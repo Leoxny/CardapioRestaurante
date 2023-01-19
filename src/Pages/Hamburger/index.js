@@ -11,10 +11,55 @@ export default function Steaks({navigation}) {
 
       <View style={styles.box}>
         <View style={styles.inner}>
-          <TouchableOpacity onPress={() => navigation.navigate('InformationDrinksLimon')}>
-            <Image style={styles.image} source={require('../../asset/Drinks/caipirinha-cadareceita.jpg')}/>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationHam')}>
+            <Image style={styles.image} source={require('../../asset/Ham/classic.jpg')}/>
           </TouchableOpacity>
-          <Text style={styles.texto}>Gravy Mignon</Text>
+          <Text style={styles.texto}>Classic Burger</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationOzzy')}>
+            <Image style={styles.image} source={require('../../asset/Ham/ozzy.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Ozzy Burger</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationPepp')}>
+            <Image style={styles.image} source={require('../../asset/Ham/burger.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Pepperoni Burger</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationRibs')}>
+            <Image style={styles.image} source={require('../../asset/Ham/ribs.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Ribs Steack Sandwich</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationSmoke')}>
+            <Image style={styles.image} source={require('../../asset/Ham/smoke.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Smoked Burger</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationVegg')}>
+            <Image style={styles.image} source={require('../../asset/Ham/veggie.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Veggie</Text>
         </View>
       </View>
 
@@ -50,7 +95,7 @@ const styles = StyleSheet.create({
   },
   boxContainer:{
     width: '100%',
-    height: '45%',
+    height: '100%',
     padding: 5,
     flexDirection: 'row',
     flexWrap: 'wrap',

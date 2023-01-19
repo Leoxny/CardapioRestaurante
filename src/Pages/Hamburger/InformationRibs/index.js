@@ -7,14 +7,14 @@ export default function InformationSteaks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/Ham/classic.jpg')}
+            source={require('../../../asset/Ham/ribs.jpg')}
             />
-            <Text style={styles.about}>Classic Burger</Text>
+            <Text style={styles.about}>Ribs Steak Sandwich</Text>
         </View>
         <View style={styles.colum}>
             <Text style={styles.title}>Descrição</Text>
-            <Text style={styles.desc}>O nostálgico e tradicional burger... Pão, Angus burger, queijo, alface americana, com cebola roxa e tomates picados. 
-            Acompanha maionese de ervas e batata frita à sua escolha.
+            <Text style={styles.desc}>O orgulho do Didge! Uma versão sandwich de nossa suculenta costela suína desfiada e grelhada com barbecue, muito queijo e cebola roxa em rodelas. 
+            Acompanha molho barbecue e batata à sua escolha.
             </Text>
         </View>
         <View style={styles.prec}>

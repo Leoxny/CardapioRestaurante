@@ -7,14 +7,14 @@ export default function InformationSteaks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/Ham/classic.jpg')}
+            source={require('../../../asset/Ham/ozzy.jpg')}
             />
-            <Text style={styles.about}>Classic Burger</Text>
+            <Text style={styles.about}>Ozzy Burger</Text>
         </View>
         <View style={styles.colum}>
             <Text style={styles.title}>Descrição</Text>
-            <Text style={styles.desc}>O nostálgico e tradicional burger... Pão, Angus burger, queijo, alface americana, com cebola roxa e tomates picados. 
-            Acompanha maionese de ervas e batata frita à sua escolha.
+            <Text style={styles.desc}>O mais australiano!! Pão, Angus Burger, Cream Cheese, a tradicional salada australiana Coleslaw com abacaxi, 
+            cenoura, repolho e ervas... Igual a esse não existe.
             </Text>
         </View>
         <View style={styles.prec}>

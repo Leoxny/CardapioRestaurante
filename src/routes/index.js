@@ -36,8 +36,14 @@ import InformationRibeye from '../Pages/Steaks/InformationRibeye'
 import InformationSteaks from '../Pages/Steaks/InformationSteaks'
 import InformationStrip from '../Pages/Steaks/InformationStrip'
 
-import InformationDog from '../Pages/HotDog/InformationDog'
 import InformationHam from '../Pages/Hamburger/InformationHam'
+import InformationOzzy from '../Pages/Hamburger/InformationOzzy'
+import InformationPepp from '../Pages/Hamburger/InformationPepp'
+import InformationRibs from '../Pages/Hamburger/InformationRibs'
+import InformationSmoke from '../Pages/Hamburger/InformationSmoke'
+import InformationVegg from '../Pages/Hamburger/InformationVegg'
+
+import InformationDog from '../Pages/HotDog/InformationDog'
 
 import { Entypo, FontAwesome5,  FontAwesome, MaterialCommunityIcons} from '@expo/vector-icons'
 
@@ -71,7 +77,7 @@ function MyTab(){
         name="Hamburger" 
         component={Hamburger}
         options={{
-            title: 'Bife',
+            title: 'Hamburger',
             tabBarIcon: ({size, color}) => (
                 <FontAwesome5 name="hamburger" size={size} color={color}/>
             )
@@ -143,9 +149,38 @@ export default function Routes(){
         <Stack.Screen 
         name="InformationHam" 
         component={InformationHam}
-        options={{ title: 'Hamburguer' }}
-        />        
+        options={{ title: 'Classic Burger' }}
+        /> 
 
+        <Stack.Screen 
+        name="InformationOzzy" 
+        component={InformationOzzy}
+        options={{ title: 'Burger Ozzy' }}
+        />
+
+        <Stack.Screen 
+        name="InformationPepp" 
+        component={InformationPepp}
+        options={{ title: 'Pepperoni Burger' }}
+        />
+
+        <Stack.Screen 
+        name="InformationRibs" 
+        component={InformationRibs}
+        options={{ title: 'Ribs Steak Sandwich' }}
+        />   
+
+        <Stack.Screen 
+        name="InformationSmoke" 
+        component={InformationSmoke}
+        options={{ title: 'Smoked Burger' }}
+        /> 
+
+        <Stack.Screen 
+        name="InformationVegg" 
+        component={InformationVegg}
+        options={{ title: 'Veggie' }}
+        /> 
 
         <Stack.Screen 
         name="InformationDrinksLimon" 

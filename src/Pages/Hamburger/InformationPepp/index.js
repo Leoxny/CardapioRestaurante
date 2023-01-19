@@ -7,14 +7,13 @@ export default function InformationSteaks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/Ham/classic.jpg')}
+            source={require('../../../asset/Ham/burger.jpg')}
             />
-            <Text style={styles.about}>Classic Burger</Text>
+            <Text style={styles.about}>Pepperoni Burger</Text>
         </View>
         <View style={styles.colum}>
             <Text style={styles.title}>Descrição</Text>
-            <Text style={styles.desc}>O nostálgico e tradicional burger... Pão, Angus burger, queijo, alface americana, com cebola roxa e tomates picados. 
-            Acompanha maionese de ervas e batata frita à sua escolha.
+            <Text style={styles.desc}>Casamento perfeito com uma cerveja Didge gelada! Pão, Angus burger, queijo, muito pepperoni, cheddar, tomate e cebola picados.
             </Text>
         </View>
         <View style={styles.prec}>
