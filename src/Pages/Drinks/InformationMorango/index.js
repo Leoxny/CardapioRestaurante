@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         top: -40
     },
     handleAdd:{
-        backgroundColor: '#00bfff',
+        backgroundColor: '#c0c0c0',
         fontSize: 17,
         marginLeft: 10,
         marginRight: 10,
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
       },
       handleAddText:{
-        color: '#fff',
+        color: 'black',
         fontSize: 15,
       },
 

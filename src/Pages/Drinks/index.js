@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, SafeAreaView } from 'react-native';
 import Header from '../../components/Header';
 
 
 export default function Drinks({ navigation }) {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
 
       <Header/>
 
     <ScrollView
     showsVerticalScrollIndicator={false}
     >
-      <View style={styles.column}>
+      <View style={styles.box}>
+        <View style={styles.inner}>
         <TouchableOpacity onPress={() => navigation.navigate('InformationDrinksLimon')}>
           <Image
             style={styles.image}
@@ -20,6 +21,7 @@ export default function Drinks({ navigation }) {
           />
         </TouchableOpacity>
         <Text style={styles.texto}>Caipirinha de limão</Text>
+        </View>
       </View>
 
       <View style={styles.column}>
@@ -154,7 +156,7 @@ export default function Drinks({ navigation }) {
     
     </ScrollView>
 
-    </View>
+    </SafeAreaView>
   );
 }
 

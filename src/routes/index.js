@@ -37,11 +37,10 @@ function MyTab(){
     <Tab.Navigator
     screenOptions={
         {
+            headerTitleAlign: 'center',
             headerShown: false,
-            tabBarOptions: {
-                activeTintColor: '#00ffff',
-
-            },
+            tabBarActiveTintColor: '#8200d6',
+            tabBarInactiveTintColor: '#c0c0c0',
         }
     }
     >
