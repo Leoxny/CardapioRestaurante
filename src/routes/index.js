@@ -3,12 +3,14 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+// import do tabBar
 import Local from '../Pages/Local'
 import Hamburger from '../Pages/Hamburger'
 import Drinks from '../Pages/Drinks';
 import Steaks from '../Pages/Steaks';
 import Home from '../Pages/Home';
 
+// imports das informações dos drinks
 import InformationDrinksLimon from '../Pages/Drinks/InformationDrinksLimon';
 import InformationDrinksMarg from '../Pages/Drinks/InformationDrinksMarg';
 import InformationGilmet from '../Pages/Drinks/InformationGilmet';
@@ -24,11 +26,13 @@ import InformationMorango from '../Pages/Drinks/InformationMorango';
 import InformationLimao from '../Pages/Drinks/InformationLimao';
 import InformationMelancia from '../Pages/Drinks/InformationMelancia';
 
+// imports das informações dos locais 
 import InformationBalSC from '../Pages/Local/InformationBalSC'
 import InformationFloSC from '../Pages/Local/InformationFloSC'
 import InformationJonSC from '../Pages/Local/InformationJonSC'
 import InformationPoaRS from '../Pages/Local/InformationPoaRS'
 
+// import das informações dos file
 import InformationBone from '../Pages/Steaks/InformationBone'
 import InformationFilet from '../Pages/Steaks/InformationFilet'
 import InformationPork from '../Pages/Steaks/InformationPork'
@@ -36,6 +40,7 @@ import InformationRibeye from '../Pages/Steaks/InformationRibeye'
 import InformationSteaks from '../Pages/Steaks/InformationSteaks'
 import InformationStrip from '../Pages/Steaks/InformationStrip'
 
+// import das informações dos hamburguer
 import InformationHam from '../Pages/Hamburger/InformationHam'
 import InformationOzzy from '../Pages/Hamburger/InformationOzzy'
 import InformationPepp from '../Pages/Hamburger/InformationPepp'
@@ -43,9 +48,17 @@ import InformationRibs from '../Pages/Hamburger/InformationRibs'
 import InformationSmoke from '../Pages/Hamburger/InformationSmoke'
 import InformationVegg from '../Pages/Hamburger/InformationVegg'
 
-import InformationDog from '../Pages/HotDog/InformationDog'
+import InformationAboriginal from '../Pages/Fingerfoods/InformationAboriginal'
 
-import { Entypo, FontAwesome5,  FontAwesome, MaterialCommunityIcons} from '@expo/vector-icons'
+// import Pizza from '../Pages/Pizza'
+// import HotDog from '../Pages/HotDog'
+// import Dessert from '../Pages/Dessert'
+// import Salads from '../Pages/Salads'
+import Fingerfoods from '../Pages/Fingerfoods'
+
+import drawer from './drawer'
+
+import { Entypo, FontAwesome5,  FontAwesome, MaterialCommunityIcons, Ionicons} from '@expo/vector-icons'
 
 const Stack = createNativeStackNavigator();
 
@@ -85,12 +98,12 @@ function MyTab(){
         />
 
         <Tab.Screen 
-        name="Home" 
-        component={Home}
+        name="Fingerfoods" 
+        component={Fingerfoods}
         options={{
-            title: 'Home',
+            title: 'Petiscos',
             tabBarIcon: ({size, color}) => (
-                <Entypo name="home" size={size} color={color}/>
+                <Ionicons name="fast-food" size={size} color={color}/>
             )
         }}
         />
@@ -129,18 +142,24 @@ export default function Routes(){
     <Stack.Navigator 
     screenOptions={
         {
-            headerTitleAlign: 'center',
-            //headerShown: false            
+            headerTitleAlign: 'center',        
         }
     }
     >
-
+        
         <Stack.Screen
         name="Local" 
         component={MyTab}
         />
 
-<Stack.Screen 
+    <Stack.Screen 
+        name="InformationAboriginal" 
+        component={InformationAboriginal}
+        options={{ title: 'Aboriginal Chicken Fingers' }}
+        /> 
+
+
+        <Stack.Screen 
         name="InformationSteaks" 
         component={InformationSteaks}
         options={{ title: 'Gravy Mignon' }}

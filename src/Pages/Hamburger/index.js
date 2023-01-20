@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginLeft: 8,
     fontWeight: 'bold',
-    top: -8
+    top: -3
   },
   box:{
    width: '50%',

@@ -12,8 +12,8 @@ export default function Drinks({navigation}) {
           <TouchableOpacity onPress={() => navigation.navigate('InformationBalSC')}>
             <Image style={styles.image} source={require('../../asset/Local/didge.jpg')}/>
           </TouchableOpacity>
-          <Text style={styles.texto}>Balneário Camboriú / SC</Text>
-          <Text style={styles.desc}>Rua 4450, 143 - Centro Balneário Camboriú, SC</Text>
+          <Text style={styles.texto}>Balneário Camboriú / SC{'\n'}Rua 4450, 143 - Centro Balneário Camboriú, SC</Text>
+          <Text style={styles.desc}></Text>
         </View>
       </View>
 
@@ -22,8 +22,8 @@ export default function Drinks({navigation}) {
           <TouchableOpacity onPress={() => navigation.navigate('InformationFloSC')}>
             <Image style={styles.image} source={require('../../asset/Local/pub.jpg')}/>
           </TouchableOpacity>
-          <Text style={styles.texto2}>Florianópolis / SC</Text>
-          <Text style={styles.desc2}>Av. Beira Mar Norte 1976, Florianópolis, SC</Text>
+          <Text style={styles.texto2}>Florianópolis / SC{'\n'}Av. Beira Mar Norte 1976, Florianópolis, SC</Text>
+          <Text style={styles.desc2}></Text>
         </View>
       </View>
 
@@ -32,8 +32,8 @@ export default function Drinks({navigation}) {
           <TouchableOpacity onPress={() => navigation.navigate('InformationJonSC')}>
             <Image style={styles.image} source={require('../../asset/Local/join.jpg')}/>
           </TouchableOpacity>
-          <Text style={styles.texto3}>Joinville / SC</Text>
-          <Text style={styles.desc3}>R. Visc. de Taunay, 368 - Atiradores, Joinville - SC</Text>
+          <Text style={styles.texto3}>Joinville / SC{'\n'}R. Visc. de Taunay, 368 - Atiradores, Joinville - SC</Text>
+          <Text style={styles.desc3}></Text>
         </View>
       </View>
 
@@ -42,8 +42,8 @@ export default function Drinks({navigation}) {
           <TouchableOpacity onPress={() => navigation.navigate('InformationPoaRS')}>
             <Image style={styles.image} source={require('../../asset/Local/poa.jpg')}/>
           </TouchableOpacity>
-          <Text style={styles.texto4}>Porto Alegue / RS</Text>
-          <Text style={styles.desc4}>R. Des. Augusto Loureiro Lima, 151 - Petrópolis, Porto Alegre - RS</Text>
+          <Text style={styles.texto4}>Porto Alegue / RS{'\n'}R. Des. Augusto Loureiro Lima, 151 - Petrópolis, Porto Alegre - RS</Text>
+          <Text style={styles.desc4}></Text>
         </View>
       </View>
 
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     },
     desc:{
       marginTop: 20,
-      marginLeft: -207,
+      marginLeft: -200,
       marginTop: '15%',
       fontSize: 16,
       color: '#a9a9a9',

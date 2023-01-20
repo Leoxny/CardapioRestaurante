@@ -1,19 +1,143 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, SafeAreaView } from 'react-native';
+import Header from '../../components/Header';
 
-export default function Drinks() {
+export default function Fingerfoods({navigation}) {
  return (
-   <View style={styles.container}>
-    <Text>Petiscos</Text>
-   </View>
+  <SafeAreaView style={styles.container}>
+  <Header/>
+  <ScrollView showsHorizontalScrollIndicator={false}>
+    <View style={styles.boxContainer}>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationAboriginal')}>
+            <Image style={styles.image} source={require('../../asset/Fingerfoods/aboriginal.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Aboriginal Chicken</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationPork')}>
+            <Image style={styles.image} source={require('../../asset/Fingerfoods/chapa.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Aoc a Chapa de carne</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationRibeye')}>
+            <Image style={styles.image} source={require('../../asset/Fingerfoods/frango.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Chicken wings</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationStrip')}>
+            <Image style={styles.image} source={require('../../asset/Fingerfoods/onion.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Didge Onion</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationFilet')}>
+            <Image style={styles.image} source={require('../../asset/Fingerfoods/potato.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Didge style potato</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationBone')}>
+            <Image style={styles.image} source={require('../../asset/Fingerfoods/fish.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Fish and chips</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationBone')}>
+            <Image style={styles.image} source={require('../../asset/Fingerfoods/pork.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Pork Bites</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationBone')}>
+            <Image style={styles.image} source={require('../../asset/Fingerfoods/shark.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Shark Bites</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationBone')}>
+            <Image style={styles.image} source={require('../../asset/Fingerfoods/tasmanin.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Tasmanian Chicken</Text>
+        </View>
+      </View>
+
+      <View style={styles.box}>
+        <View style={styles.inner}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationBone')}>
+            <Image style={styles.image} source={require('../../asset/Fingerfoods/uluru.jpg')}/>
+          </TouchableOpacity>
+          <Text style={styles.texto}>Uluru Mignon</Text>
+        </View>
+      </View>
+
+    </View>
+  </ScrollView>
+</SafeAreaView>
+
   );
 }
 
 const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#FFF'
-    },
+  container: {
+    backgroundColor: 'white',
+    flex: 1
+  },
+  image: {
+    height: 150,
+    width: 180,
+    marginTop: 20,
+    margin: 5,
+    borderRadius: 10,
+  },
+  texto: {
+    fontSize: 16,
+    marginLeft: 8,
+    fontWeight: 'bold',
+    top: -3
+  },
+  box:{
+   width: '50%',
+   height: '30%',
+   padding: 5,
+  },
+  boxContainer:{
+    width: '100%',
+    height: '60%',
+    padding: 5,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    marginBottom: 10
+  },
+  inner:{
+    flex: 1,
+  }
 })

@@ -4,9 +4,10 @@ import { TextInput } from 'react-native-gesture-handler';
 
 import { Entypo, FontAwesome5,  FontAwesome, Ionicons} from '@expo/vector-icons'
 
-//const [text, setText] = useState('')
+export default function Header() {       
 
-export default function Header() {
+    const [searchText, setSearchText] = useState('')          
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
  return (
     <SafeAreaView style={styles.container}>
         <View style={styles.cabecalho}>
@@ -20,6 +21,7 @@ export default function Header() {
             placeholder='Pesquisar'
             autoCapitalize='none'
             autoCorrect={false}
+            onChangeText={(t) => setSearchText(t)}
             />
         </View>
     </SafeAreaView>

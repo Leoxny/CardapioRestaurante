@@ -5,7 +5,7 @@ import { StyleSheet, Image } from 'react-native';
 import Stack from './index'
 import CustomDrawer from '../components/CustomDrawer';
 
-import { Entypo, Ionicons, FontAwesome5} from '@expo/vector-icons'
+import { Entypo, Ionicons, FontAwesome5, FontAwesome} from '@expo/vector-icons'
 
 const Drawer = createDrawerNavigator();
 
@@ -28,7 +28,19 @@ export default function DrawerNavigation(){
             }
         }
     }
-    >      
+    > 
+
+        <Drawer.Screen
+        name="Home" 
+        component={Stack}
+        options={{
+            title: 'Home',
+            drawerIcon: ({color}) => (
+                <Entypo name="home" size={22} color={color}/>
+                ),  
+        }}
+        />
+     
 
         <Drawer.Screen
         name="Pizza" 
@@ -41,27 +53,16 @@ export default function DrawerNavigation(){
         />
 
         <Drawer.Screen
-        name="Hamburguer" 
+        name="HotDog" 
         component={Stack}
         options={{ 
-            title: 'Hamburger',
+            title: 'Cachorro quente',
             drawerIcon: ({color}) => (
-                <FontAwesome5 name="hamburger" size={22} color={color}/>
+                <FontAwesome5 name="hotdog" size={22} color={color}/>
                 ),  
         }}
         />
 
-
-        <Drawer.Screen
-        name="Fingerfoods" 
-        component={Stack}
-        options={{
-            title: 'Petiscos',
-            drawerIcon: ({color}) => (
-                <Ionicons name="pizza" size={22} color={color}/>
-                ),  
-        }}
-        />
 
         <Drawer.Screen 
         name="Dessert" 
@@ -69,7 +70,7 @@ export default function DrawerNavigation(){
         options={{
             title: 'Sobremessa',
             drawerIcon: ({color}) => (
-                <Ionicons name="pizza" size={22} color={color}/>
+                <Entypo name="cake" size={22} color={color}/>
                 ),  
         }}
         />       
@@ -80,7 +81,18 @@ export default function DrawerNavigation(){
         options={{ 
             title: 'Saladas',
             drawerIcon: ({color}) => (
-                <Ionicons name="pizza" size={22} color={color}/>
+                <FontAwesome name="leaf" size={22} color={color}/>
+                ),  
+        }}
+        />
+
+        <Drawer.Screen 
+        name="Cervejas" 
+        component={Stack}
+        options={{ 
+            title: 'Saladas',
+            drawerIcon: ({color}) => (
+                <FontAwesome name="leaf" size={22} color={color}/>
                 ),  
         }}
         />
