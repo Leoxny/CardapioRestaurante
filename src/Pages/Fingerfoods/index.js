@@ -20,7 +20,7 @@ export default function Fingerfoods({navigation}) {
 
       <View style={styles.box}>
         <View style={styles.inner}>
-          <TouchableOpacity onPress={() => navigation.navigate('InformationPork')}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationChapa')}>
             <Image style={styles.image} source={require('../../asset/Fingerfoods/chapa.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Aoc a Chapa de carne</Text>
@@ -29,7 +29,7 @@ export default function Fingerfoods({navigation}) {
 
       <View style={styles.box}>
         <View style={styles.inner}>
-          <TouchableOpacity onPress={() => navigation.navigate('InformationRibeye')}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationWings')}>
             <Image style={styles.image} source={require('../../asset/Fingerfoods/frango.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Chicken wings</Text>
@@ -38,7 +38,7 @@ export default function Fingerfoods({navigation}) {
 
       <View style={styles.box}>
         <View style={styles.inner}>
-          <TouchableOpacity onPress={() => navigation.navigate('InformationStrip')}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationOnion')}>
             <Image style={styles.image} source={require('../../asset/Fingerfoods/onion.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Didge Onion</Text>
@@ -47,7 +47,7 @@ export default function Fingerfoods({navigation}) {
 
       <View style={styles.box}>
         <View style={styles.inner}>
-          <TouchableOpacity onPress={() => navigation.navigate('InformationFilet')}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationPotato')}>
             <Image style={styles.image} source={require('../../asset/Fingerfoods/potato.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Didge style potato</Text>
@@ -56,7 +56,7 @@ export default function Fingerfoods({navigation}) {
 
       <View style={styles.box}>
         <View style={styles.inner}>
-          <TouchableOpacity onPress={() => navigation.navigate('InformationBone')}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationFish')}>
             <Image style={styles.image} source={require('../../asset/Fingerfoods/fish.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Fish and chips</Text>
@@ -65,7 +65,7 @@ export default function Fingerfoods({navigation}) {
 
       <View style={styles.box}>
         <View style={styles.inner}>
-          <TouchableOpacity onPress={() => navigation.navigate('InformationBone')}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationPorkBites')}>
             <Image style={styles.image} source={require('../../asset/Fingerfoods/pork.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Pork Bites</Text>
@@ -74,7 +74,7 @@ export default function Fingerfoods({navigation}) {
 
       <View style={styles.box}>
         <View style={styles.inner}>
-          <TouchableOpacity onPress={() => navigation.navigate('InformationBone')}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationShark')}>
             <Image style={styles.image} source={require('../../asset/Fingerfoods/shark.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Shark Bites</Text>
@@ -83,7 +83,7 @@ export default function Fingerfoods({navigation}) {
 
       <View style={styles.box}>
         <View style={styles.inner}>
-          <TouchableOpacity onPress={() => navigation.navigate('InformationBone')}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationTasmanian')}>
             <Image style={styles.image} source={require('../../asset/Fingerfoods/tasmanin.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Tasmanian Chicken</Text>
@@ -92,7 +92,7 @@ export default function Fingerfoods({navigation}) {
 
       <View style={styles.box}>
         <View style={styles.inner}>
-          <TouchableOpacity onPress={() => navigation.navigate('InformationBone')}>
+          <TouchableOpacity onPress={() => navigation.navigate('InformationUluru')}>
             <Image style={styles.image} source={require('../../asset/Fingerfoods/uluru.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Uluru Mignon</Text>

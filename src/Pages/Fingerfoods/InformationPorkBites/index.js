@@ -7,14 +7,13 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/Fingerfoods/tasmanin.jpg')}
+            source={require('../../../asset/Fingerfoods/pork.jpg')}
             />
-            <Text style={styles.about}>Tasmanian Chicken</Text>
+            <Text style={styles.about}>Pork Bites</Text>
         </View>
         <View style={styles.colum}>
             <Text style={styles.title}>Descrição</Text>
-            <Text style={styles.desc}>Cubos de frango empanados no estilo tempurá, salteados com mix de pimentões amarelo e vermelho, 
-            cebola e alho poró ao molho Pineapple (agridoce de abacaxi). O favorito do TAZ!!!
+            <Text style={styles.desc}>Bolinhos de mandioca recheados com nossa macia e suculenta costela suína acompanhado de molho barbecue.
             </Text>
         </View>
         <View style={styles.prec}>

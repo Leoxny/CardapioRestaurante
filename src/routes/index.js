@@ -49,6 +49,16 @@ import InformationSmoke from '../Pages/Hamburger/InformationSmoke'
 import InformationVegg from '../Pages/Hamburger/InformationVegg'
 
 import InformationAboriginal from '../Pages/Fingerfoods/InformationAboriginal'
+import InformationChapa from '../Pages/Fingerfoods/InformationChapa'
+import InformationFish from '../Pages/Fingerfoods/InformationFish'
+import InformationOnion from '../Pages/Fingerfoods/InformationOnion'
+import InformationPorkBites from '../Pages/Fingerfoods/InformationPorkBites'
+import InformationPotato from '../Pages/Fingerfoods/InformationPotato'
+import InformationShark from '../Pages/Fingerfoods/InformationShark'
+import InformationTasmanian from '../Pages/Fingerfoods/InformationTasmanian'
+import InformationUluru from '../Pages/Fingerfoods/InformationUluru'
+import InformationWings from '../Pages/Fingerfoods/InformationWings'
+
 
 // import Pizza from '../Pages/Pizza'
 // import HotDog from '../Pages/HotDog'
@@ -56,7 +66,6 @@ import InformationAboriginal from '../Pages/Fingerfoods/InformationAboriginal'
 // import Salads from '../Pages/Salads'
 import Fingerfoods from '../Pages/Fingerfoods'
 
-import drawer from './drawer'
 
 import { Entypo, FontAwesome5,  FontAwesome, MaterialCommunityIcons, Ionicons} from '@expo/vector-icons'
 
@@ -123,7 +132,7 @@ function MyTab(){
         name="Drinks" 
         component={Drinks}
         options={{
-            title: 'Bebidas',
+            title: 'Drinks',
             tabBarIcon: ({size, color}) => (
                 <Entypo name="drink" size={size} color={color}/>
             )
@@ -145,6 +154,7 @@ export default function Routes(){
             headerTitleAlign: 'center',        
         }
     }
+    initialRouteName="Login"
     >
         
         <Stack.Screen
@@ -152,11 +162,71 @@ export default function Routes(){
         component={MyTab}
         />
 
-    <Stack.Screen 
+        <Stack.Screen 
         name="InformationAboriginal" 
         component={InformationAboriginal}
         options={{ title: 'Aboriginal Chicken Fingers' }}
+        />
+
+        <Stack.Screen 
+        name="InformationChapa" 
+        component={InformationChapa}
+        options={{ title: 'Acoc a Chapa de Carne' }}
         /> 
+
+        <Stack.Screen 
+        name="InformationFish" 
+        component={InformationFish}
+        options={{ title: 'Fish and Chips' }}
+        />
+
+        
+        <Stack.Screen 
+        name="InformationOnion" 
+        component={InformationOnion}
+        options={{ title: 'Didge Onion' }}
+        />  
+
+        
+        <Stack.Screen 
+        name="InformationPorkBites" 
+        component={InformationPorkBites}
+        options={{ title: 'Pork Bites' }}
+        />  
+
+        
+        <Stack.Screen 
+        name="InformationPotato" 
+        component={InformationPotato}
+        options={{ title: 'Didge Style Potato' }}
+        />  
+
+        
+        <Stack.Screen 
+        name="InformationShark" 
+        component={InformationShark}
+        options={{ title: 'Shark Bites' }}
+        />  
+
+        
+        <Stack.Screen 
+        name="InformationTasmanian" 
+        component={InformationTasmanian}
+        options={{ title: 'Tasmanian Chicken' }}
+        />  
+        
+        <Stack.Screen 
+        name="InformationUluru" 
+        component={InformationUluru}
+        options={{ title: 'Uluru Mignon' }}
+        />  
+
+        
+        <Stack.Screen 
+        name="InformationWings" 
+        component={InformationWings}
+        options={{ title: 'Chicken Wings' }}
+        />    
 
 
         <Stack.Screen 

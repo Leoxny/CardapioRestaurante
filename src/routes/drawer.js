@@ -90,9 +90,9 @@ export default function DrawerNavigation(){
         name="Cervejas" 
         component={Stack}
         options={{ 
-            title: 'Saladas',
+            title: 'Bebidas',
             drawerIcon: ({color}) => (
-                <FontAwesome name="leaf" size={22} color={color}/>
+                <FontAwesome5 name="beer" size={22} color={color}/>
                 ),  
         }}
         />
