@@ -7,7 +7,7 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/image/Drinks/caipirosca.jpg')}
+            source={require('../../../asset/Image/Drinks/caipirosca.jpg')}
             />
             <Text style={styles.about}>Caipirosca nevada</Text>
         </View>

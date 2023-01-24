@@ -7,7 +7,7 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/image/Local/pub.jpg')}
+            source={require('../../../asset/Image/Local/pub.jpg')}
             />
             <Text style={styles.about}>Florianópolis / SC{'\n'}Av. Beira Mar Norte 1976, Florianópolis, SC</Text>
         </View>

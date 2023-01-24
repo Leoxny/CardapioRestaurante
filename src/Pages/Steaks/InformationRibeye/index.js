@@ -7,7 +7,7 @@ export default function InformationSteaks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/image/Steaks/ribeye.jpg')}
+            source={require('../../../asset/Image/Steaks/ribeye.jpg')}
             />
             <Text style={styles.about}>Queensland Ribeye</Text>
         </View>

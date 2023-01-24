@@ -7,7 +7,7 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/image/Fingerfoods/potato.jpg')}
+            source={require('../../../asset/Image/Fingerfoods/potato.jpg')}
             />
             <Text style={styles.about}>Didge Style Potato</Text>
         </View>

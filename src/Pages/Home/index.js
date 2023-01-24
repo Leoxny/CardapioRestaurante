@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 export default function Home() {
  return (
    <View style={styles.container}>
-    <Image style={styles.image} source={require('../../asset/fundo/images.png')}/>
+  
    </View>
   );
 }

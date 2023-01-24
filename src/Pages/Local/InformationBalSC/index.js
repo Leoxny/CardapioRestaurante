@@ -7,7 +7,7 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/image/Local/didge.jpg')}
+            source={require('../../../asset/Image/Local/didge.jpg')}
             />
             <Text style={styles.about}>Balneário Camboriú / SC {'\n'}Rua 4450, 143 - Centro Balneário Camboriú, SC</Text>
         </View>

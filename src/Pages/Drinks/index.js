@@ -14,7 +14,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationDrinksLimon')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/caipirinha-cadareceita.jpg')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/caipirinha-cadareceita.jpg')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Caipitinha de Limão</Text>
             </View>
@@ -23,7 +23,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationDrinksMarg')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/jasmine.jpg')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/jasmine.jpg')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Jasmine Margarita</Text>
             </View>
@@ -32,7 +32,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationGilmet')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/gilmet.jpg')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/gilmet.jpg')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Gilmet Cocktail</Text>
             </View>
@@ -41,7 +41,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationGinTonica')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/gin.png')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/gin.png')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Gin Tonica</Text>
             </View>
@@ -50,7 +50,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationAperol')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/aperol.jpg')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/aperol.jpg')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Aperol Spritz</Text>
             </View>
@@ -59,7 +59,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationBeach')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/beach.png')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/beach.png')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Sex on the beach</Text>
             </View>
@@ -68,7 +68,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationTropical')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/tropical.jpg')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/tropical.jpg')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Tropical Gin</Text>
             </View>
@@ -77,7 +77,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationMojito')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/mojito.jpg')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/mojito.jpg')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Mojito</Text>
             </View>
@@ -86,7 +86,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationBoomerang')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/boomerang.jpg')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/boomerang.jpg')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Boomerang</Text>
             </View>
@@ -95,7 +95,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationAbacaxi')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/abacaxi.jpg')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/abacaxi.jpg')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Caipirinha de abacaxi</Text>
             </View>
@@ -104,7 +104,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationNevada')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/caipirosca.jpg')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/caipirosca.jpg')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Caipirosca nevada</Text>
             </View>
@@ -113,7 +113,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationMorango')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/morangojpg.jpg')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/morangojpg.jpg')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Caipirinha de morango</Text>
             </View>
@@ -122,7 +122,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationLimao')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/condensado.jpg')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/condensado.jpg')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Caipirinha de limão</Text>
             </View>
@@ -131,7 +131,7 @@ export default function Drinks({ navigation }) {
           <View style={styles.box}>
             <View style={styles.inner}>
               <TouchableOpacity onPress={() => navigation.navigate('InformationMelancia')}>
-                <Image style={styles.image} source={require('../../asset/image/Drinks/twits.jpg')}/>
+                <Image style={styles.image} source={require('../../asset/Image/Drinks/twits.jpg')}/>
               </TouchableOpacity>
               <Text style={styles.texto}>Twist</Text>
             </View>

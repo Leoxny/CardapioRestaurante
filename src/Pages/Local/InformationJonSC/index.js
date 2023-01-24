@@ -7,7 +7,7 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/image/Local/join.jpg')}
+            source={require('../../../asset/Image/Local/join.jpg')}
             />
             <Text style={styles.about}>Joinville / SC{'\n'}R. Visc. de Taunay, 368 - Atiradores, Joinville - SC</Text>
         </View>

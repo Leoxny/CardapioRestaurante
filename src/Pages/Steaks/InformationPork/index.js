@@ -7,7 +7,7 @@ export default function InformationSteaks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/image/Steaks/pork.jpg')}
+            source={require('../../../asset/Image/Steaks/pork.jpg')}
             />
             <Text style={styles.about}>Pork Ribs</Text>
         </View>

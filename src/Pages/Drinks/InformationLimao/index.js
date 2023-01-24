@@ -7,7 +7,7 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/image/Drinks/condensado.jpg')}
+            source={require('../../../asset/Image/Drinks/condensado.jpg')}
             />
             <Text style={styles.about}>Caipitinha de limão condensado</Text>
         </View>

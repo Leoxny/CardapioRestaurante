@@ -7,7 +7,7 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/image/Fingerfoods/aboriginal.jpg')}
+            source={require('../../../asset/Image/Fingerfoods/aboriginal.jpg')}
             />
             <Text style={styles.about}>Aboriginal Chicken Fingers</Text>
         </View>
