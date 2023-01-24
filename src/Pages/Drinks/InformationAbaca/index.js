@@ -7,7 +7,7 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/Drinks/abacaxi.jpg')}
+            source={require('../../../asset/image/Drinks/abacaxi.jpg')}
             />
             <Text style={styles.about}>Capirinha de abacaxi com hortelã</Text>
         </View>

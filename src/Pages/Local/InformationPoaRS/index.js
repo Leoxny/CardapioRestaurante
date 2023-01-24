@@ -7,7 +7,7 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/Local/didge.jpg')}
+            source={require('../../../asset/image/Local/didge.jpg')}
             />
             <Text style={styles.about}>Porto Alegre / RS {'\n'}R. Des. Augusto Loureiro Lima, 151 - Petrópolis, Porto Alegre - RS</Text>
         </View>

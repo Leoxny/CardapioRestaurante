@@ -7,7 +7,7 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/Fingerfoods/chapa.jpg')}
+            source={require('../../../asset/image/Fingerfoods/chapa.jpg')}
             />
             <Text style={styles.about}>Acoc a Chapa de Carne</Text>
         </View>

@@ -12,7 +12,7 @@ const CustomDrawer = (props) => {
         <DrawerContentScrollView 
         {...props}
         contentContainerStyle={{backgroundColor: '#8200d6'}}>
-            <ImageBackground source={require('../../asset/fundo/menu.jpg')} style={{padding: 20}}>
+            <ImageBackground source={require('../../asset/image/fundo/menu.jpg')} style={{padding: 20}}>
                 <View style={styles.content}>
                     <Feather name="user" size={45}/>
                 </View>

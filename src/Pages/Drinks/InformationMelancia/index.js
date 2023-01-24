@@ -7,7 +7,7 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/Drinks/twits.jpg')}
+            source={require('../../../asset/image/Drinks/twits.jpg')}
             />
             <Text style={styles.about}>Twist de melancia e morango</Text>
         </View>

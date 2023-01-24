@@ -7,7 +7,7 @@ export default function InformationSteaks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/Ham/classic.jpg')}
+            source={require('../../../asset/image/Ham/classic.jpg')}
             />
             <Text style={styles.about}>Classic Burger</Text>
         </View>

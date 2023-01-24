@@ -7,7 +7,7 @@ export default function InformationDrinks() {
         <View>
             <Image
             style={styles.image}
-            source={require('../../../asset/Drinks/aperol.jpg')}
+            source={require('../../../asset/image/Drinks/aperol.jpg')}
             />
             <Text style={styles.about}>Aperol Spritz</Text>
         </View>

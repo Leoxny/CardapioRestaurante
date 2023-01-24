@@ -12,7 +12,7 @@ export default function Steaks({navigation}) {
       <View style={styles.box}>
         <View style={styles.inner}>
           <TouchableOpacity onPress={() => navigation.navigate('InformationHam')}>
-            <Image style={styles.image} source={require('../../asset/Ham/classic.jpg')}/>
+            <Image style={styles.image} source={require('../../asset/image/Ham/classic.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Classic Burger</Text>
         </View>
@@ -21,7 +21,7 @@ export default function Steaks({navigation}) {
       <View style={styles.box}>
         <View style={styles.inner}>
           <TouchableOpacity onPress={() => navigation.navigate('InformationOzzy')}>
-            <Image style={styles.image} source={require('../../asset/Ham/ozzy.jpg')}/>
+            <Image style={styles.image} source={require('../../asset/image/Ham/ozzy.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Ozzy Burger</Text>
         </View>
@@ -30,7 +30,7 @@ export default function Steaks({navigation}) {
       <View style={styles.box}>
         <View style={styles.inner}>
           <TouchableOpacity onPress={() => navigation.navigate('InformationPepp')}>
-            <Image style={styles.image} source={require('../../asset/Ham/burger.jpg')}/>
+            <Image style={styles.image} source={require('../../asset/image/Ham/burger.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Pepperoni Burger</Text>
         </View>
@@ -39,7 +39,7 @@ export default function Steaks({navigation}) {
       <View style={styles.box}>
         <View style={styles.inner}>
           <TouchableOpacity onPress={() => navigation.navigate('InformationRibs')}>
-            <Image style={styles.image} source={require('../../asset/Ham/ribs.jpg')}/>
+            <Image style={styles.image} source={require('../../asset/image/Ham/ribs.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Ribs Steack Sandwich</Text>
         </View>
@@ -48,7 +48,7 @@ export default function Steaks({navigation}) {
       <View style={styles.box}>
         <View style={styles.inner}>
           <TouchableOpacity onPress={() => navigation.navigate('InformationSmoke')}>
-            <Image style={styles.image} source={require('../../asset/Ham/smoke.jpg')}/>
+            <Image style={styles.image} source={require('../../asset/image/Ham/smoke.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Smoked Burger</Text>
         </View>
@@ -57,7 +57,7 @@ export default function Steaks({navigation}) {
       <View style={styles.box}>
         <View style={styles.inner}>
           <TouchableOpacity onPress={() => navigation.navigate('InformationVegg')}>
-            <Image style={styles.image} source={require('../../asset/Ham/veggie.jpg')}/>
+            <Image style={styles.image} source={require('../../asset/image/Ham/veggie.jpg')}/>
           </TouchableOpacity>
           <Text style={styles.texto}>Veggie</Text>
         </View>

@@ -289,121 +289,121 @@ export default function Routes(){
         options={{ title: 'Gilmet Cocktail' }}
         /> 
 
-<Stack.Screen 
+        <Stack.Screen 
         name="InformationGinTonica" 
         component={InformationGinTonica}
         options={{ title: 'Gin Tonica' }}
         /> 
 
- <Stack.Screen 
+        <Stack.Screen 
         name="InformationAperol" 
         component={InformationAperol}
         options={{ title: 'Aperol Spritz' }}
         /> 
 
- <Stack.Screen 
+        <Stack.Screen 
         name="InformationBeach" 
         component={InformationBeach}
         options={{ title: 'Sex on the beach' }}
         /> 
 
- <Stack.Screen 
+        <Stack.Screen 
         name="InformationTropical" 
         component={InformationTropical}
         options={{ title: 'Gin Tropical' }}
         /> 
 
- <Stack.Screen 
+        <Stack.Screen 
         name="InformationMojito" 
         component={InformationMojito}
         options={{ title: 'Mojito' }}
         /> 
 
- <Stack.Screen 
+        <Stack.Screen 
         name="InformationBoomerang" 
         component={InformationBoomerang}
         options={{ title: 'Boomerang' }}
         /> 
 
- <Stack.Screen 
+        <Stack.Screen 
         name="InformationAbacaxi" 
         component={InformationAbacaxi}
         options={{ title: 'Caipirinha de abacaxi' }}
         /> 
 
-<Stack.Screen 
+        <Stack.Screen 
         name="InformationNevada" 
         component={InformationNevada}
         options={{ title: 'Caipirosca nevada' }}
         />
 
-<Stack.Screen 
+        <Stack.Screen 
         name="InformationMorango" 
         component={InformationMorango}
         options={{ title: 'Caipirinha de morango condensada' }}
         />
 
- <Stack.Screen 
+        <Stack.Screen 
         name="InformationLimao" 
         component={InformationLimao}
         options={{ title: 'Caipirinha de limão condensada' }}
         /> 
 
- <Stack.Screen 
+        <Stack.Screen 
         name="InformationMelancia" 
         component={InformationMelancia}
         options={{ title: 'Twist de melancia e morango' }}
         />
 
-<Stack.Screen 
+        <Stack.Screen 
         name="InformationBalSC" 
         component={InformationBalSC}
         options={{ title: 'Balneário Camboriú / SC' }}
         />
 
-<Stack.Screen 
+        <Stack.Screen 
         name="InformationFloSC" 
         component={InformationFloSC}
         options={{ title: 'Florianópolis / SC' }}
         />
 
-<Stack.Screen 
+        <Stack.Screen 
         name="InformationJonSC" 
         component={InformationJonSC}
         options={{ title: 'Joinville / SC' }}
         />
 
-<Stack.Screen 
+        <Stack.Screen 
         name="InformationPoaRS" 
         component={InformationPoaRS}
         options={{ title: 'Porto Alegre / RS' }}
         />
 
-<Stack.Screen 
+        <Stack.Screen 
         name="InformationBone" 
         component={InformationBone}
         options={{ title: 'T-Bone' }}
         />
 
-<Stack.Screen 
+        <Stack.Screen 
         name="InformationFilet" 
         component={InformationFilet}
         options={{ title: 'Syoney Filet' }}
         />
 
-<Stack.Screen 
+        <Stack.Screen 
         name="InformationPork" 
         component={InformationPork}
         options={{ title: 'Pork Ribs' }}
         />
 
-<Stack.Screen 
+        <Stack.Screen 
         name="InformationStrip" 
         component={InformationStrip}
         options={{ title: 'Strip Steack' }}
         />
 
-<Stack.Screen 
+        <Stack.Screen 
         name="InformationRibeye" 
         component={InformationRibeye}
         options={{ title: 'Queensland Ribeye' }}
