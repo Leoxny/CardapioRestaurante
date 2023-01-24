@@ -59,13 +59,11 @@ import InformationTasmanian from '../Pages/Fingerfoods/InformationTasmanian'
 import InformationUluru from '../Pages/Fingerfoods/InformationUluru'
 import InformationWings from '../Pages/Fingerfoods/InformationWings'
 
-
-// import Pizza from '../Pages/Pizza'
-// import HotDog from '../Pages/HotDog'
-// import Dessert from '../Pages/Dessert'
-// import Salads from '../Pages/Salads'
+import Login from '../Pages/Login'
+import Cadastro from '../Pages/Login/Cadastro'
 import Fingerfoods from '../Pages/Fingerfoods'
 
+import Pizza from '../Pages/Pizza';
 
 import { Entypo, FontAwesome5,  FontAwesome, MaterialCommunityIcons, Ionicons} from '@expo/vector-icons'
 
@@ -79,7 +77,7 @@ function MyTab(){
         {
             headerTitleAlign: 'center',
             headerShown: false,
-            tabBarActiveTintColor: '#8200d6',
+            tabBarActiveTintColor: '#e32636',
             tabBarInactiveTintColor: '#c0c0c0',
         }
     }
@@ -154,7 +152,6 @@ export default function Routes(){
             headerTitleAlign: 'center',        
         }
     }
-    initialRouteName="Login"
     >
         
         <Stack.Screen
@@ -162,10 +159,27 @@ export default function Routes(){
         component={MyTab}
         />
 
+        <Stack.Screen
+        name="Pizza"
+        component={Pizza}
+        />
+
         <Stack.Screen 
         name="InformationAboriginal" 
         component={InformationAboriginal}
         options={{ title: 'Aboriginal Chicken Fingers' }}
+        />
+
+        <Stack.Screen 
+        name="Cadastro" 
+        component={Cadastro}
+        options={{ title: 'Cadastro' }}
+        />
+
+        <Stack.Screen 
+        name="Login" 
+        component={Login}
+        options={{ title: 'Login' }}
         />
 
         <Stack.Screen 

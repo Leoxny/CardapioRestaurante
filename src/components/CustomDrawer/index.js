@@ -11,8 +11,8 @@ const CustomDrawer = (props) => {
     <View style={{flex: 1}}>
         <DrawerContentScrollView 
         {...props}
-        contentContainerStyle={{backgroundColor: '#8200d6'}}>
-            <ImageBackground source={require('../../asset/Image/fundo/menu.jpg')} style={{padding: 20}}>
+        contentContainerStyle={{backgroundColor: 'red'}}>
+            <ImageBackground source={require('../../asset/Image/fundo/vermelho.jpg')} style={{padding: 20, marginTop: -38}}>
                 <View style={styles.content}>
                     <Feather name="user" size={45}/>
                 </View>
@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         marginBottom: 10,
         borderRadius: 80/2,
+        marginTop: 30,
     },
     linha:{
         padding: 20,

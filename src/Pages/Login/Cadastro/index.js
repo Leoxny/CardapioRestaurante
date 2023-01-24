@@ -1,12 +1,29 @@
 import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 
-export default function App() {
+export default function App({navigation}) {
 
   const [user, setUser] = useState('')
   const [password, setPassword] = useState('')
   const [confPassword, setConPassword] = useState('')
   const [email, setEmail] = useState('')
+
+  const validacao = () => {
+
+    let navegacao = navigation.navigate('Login')
+
+    if(user !== ''){
+      alert("Preencha o campo")
+    }else if(password !== ''){
+      alert("Preencha o campo")
+    }else if(email !== ''){
+      alert("Preencha o campo")
+    }else if(confPassword !== ''){
+      alert("Preencha o campo")
+    }
+
+    setUser(navegacao)
+  }
 
   return (
 
@@ -15,7 +32,7 @@ export default function App() {
       <View style={styles.contImage}>
         <Image
           style={styles.image}
-          source={require('./assets/Image/didge.png')}
+          source={require('../../../asset/Image/fundo/didge.png')}
         />
       </View>
 
@@ -48,14 +65,16 @@ export default function App() {
         />
       </View>
 
-      <TouchableOpacity >
-        <Text style={styles.Login}>Create account</Text>
+      <TouchableOpacity onPress={validacao}>
+        <Text style={styles.Login}>Logar</Text>
       </TouchableOpacity>
 
-      <View>
-        <Text>
-            Você já tem uma conta? Login
-        </Text>
+      <View style={styles.text}>
+        <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+          <Text>
+              Você já tem uma conta? <Text style={styles.link}>Login</Text>
+          </Text>
+        </TouchableOpacity>
       </View>
 
     </View>
@@ -69,12 +88,12 @@ const styles = StyleSheet.create({
   contImage:{
     flexDirection: 'row',
     justifyContent: 'center',
-    marginBottom: 50,
+    marginBottom: 30,
   },
   image: {
     width: 300,
     height: 200,
-    marginTop: 130,
+    marginTop: 40,
   },
   contInput:{
     justifyContent: 'center',
@@ -95,5 +114,12 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 20,
     textAlign: 'center',
+  },
+  text:{
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  link:{
+    color: 'blue',
   }
 });

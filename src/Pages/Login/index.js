@@ -1,14 +1,30 @@
 import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 
-export default function App() {
+export default function App({navigation}) {
 
   const [user, setUser] = useState('')
   const [password, setPassword] = useState('')
 
-  var usuario = "leonardo"
-  var senha = "123456"
+  // const [acount, setAcount] = useState({
+  //   input: '',
+  //   user: '',
+  //   password: '',
+  // })
 
+  const validacao = () => {
+
+    let navegacao = navigation.navigate('Home')
+
+    if(user !== ''){
+      alert("Usuário não pode ficar em branco")
+    }else if(password !== ''){
+      alert("Senha não pode ficar em branco")
+    }else{
+      setUser(navegacao)
+    }
+  
+  }
 
   return (
     <View style={styles.container}>
@@ -16,7 +32,7 @@ export default function App() {
       <View style={styles.contImage}>
         <Image
           style={styles.image}
-          source={require('../../asset/fundo/didge.png')}
+          source={require('../../asset/Image/fundo/didge.png')}
         />
       </View>
 
@@ -25,24 +41,26 @@ export default function App() {
           style={styles.input}
           placeholder="Usuario"
           value={user}
-          onChangeText={usuario}
+          //onChangeText={}
         />
         <TextInput
           style={styles.input}
           placeholder="Senha"
           value={password}
-          onChangeText={senha}
+          //onChangeText={senha}
         />
       </View>
 
-      <TouchableOpacity>
+      <TouchableOpacity onPress={validacao}>
         <Text style={styles.Login}>Login</Text>
       </TouchableOpacity>   
 
       <View style={styles.text}>
-        <Text>
-            Não tem uma conta? Crie uma
-        </Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Cadastro')}>
+          <Text>
+              Não tem uma conta? <Text style={styles.link}>Crie uma</Text> 
+          </Text>
+        </TouchableOpacity>
       </View>
 
     </View>
@@ -61,7 +79,7 @@ const styles = StyleSheet.create({
   image: {
     width: 300,
     height: 200,
-    marginTop: 130,
+    marginTop: 50,
   },
   contInput:{
     justifyContent: 'center',
@@ -82,5 +100,12 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 20,
     textAlign: 'center',
+  },
+  text:{
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  link:{
+    color: 'blue',
   }
 });
